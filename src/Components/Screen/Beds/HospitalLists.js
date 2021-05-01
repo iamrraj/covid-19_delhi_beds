@@ -62,7 +62,6 @@ function HospitalLists() {
           <a
             href="https://coronabeds.jantasamvad.org/"
             target="_blank"
-            style={{ position: "absolute", left: "50%" }}
             rel="noreferrer"
           >
             Coronabeds.jantasamvad.org
@@ -139,7 +138,7 @@ function HospitalLists() {
             src="https://digitalfleet.eu/app/static/media/spinner.0e833be9.gif"
             className="loading_data"
             alt="Loding"
-            style={{ width: "170px" }}
+            style={{ width: "170px", position: "absolute", left: "50%" }}
           />
         ) : (
           <table className="table ">

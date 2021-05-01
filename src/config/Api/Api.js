@@ -1,9 +1,7 @@
-const api = `http://145.239.135.178:8001/api/1/`;
-
 const config = {
   apiUrl: {
-    beds: `${api}hospital/bed/data/`,
-    hospitalData: `${api}hospital/details/`,
+    beds: `${process.env.REACT_APP_SERVER_URL}hospital/bed/data/`,
+    hospitalData: `${process.env.REACT_APP_SERVER_URL}hospital/details/`,
   },
 
   head: {
