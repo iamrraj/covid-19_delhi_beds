@@ -14,6 +14,14 @@ import config from "../Api/Api";
 //   return products;
 // }
 
+// if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
+//   // development URL
+//   axios.defaults.baseURL = `${process.env.REACT_APP_API_SERVER_DEVELOPMENT}/api/v1`;
+// } else {
+//   // production URL
+//   axios.defaults.baseURL = `${process.env.REACT_APP_API_SERVER_PRODUCTION}/api/v1`;
+// }
+
 export async function getbedInfo(setdata, setLoading, value) {
   fetch(
     `${config.apiUrl.beds}?name__icontains=${value ? value : ""}`,

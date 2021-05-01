@@ -16,11 +16,11 @@ body {
   padding: 10px;
   border-radius: 50%;
   position: relative;
-  left: 15px;
+  left: 30px;
 }
 .right {
   position: relative;
-  left: 90px;
+  left: 190px;
   background-color: rgb(241, 206, 88);
   padding: 10px;
   border-radius: 50%;
