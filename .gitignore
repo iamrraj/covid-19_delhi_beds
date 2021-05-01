@@ -11,6 +11,19 @@
 # production
 /build
 
+#hide some file
+/src/Components/Header
+/src/Components/Main
+
+#hide Few files name
+/src/Components/routes/index.js
+/src/Components/Card/HospitalCards.js
+/src/Components/Card/CardComponent.js
+/src/routes/index.js
+/src/App.js
+
+
+
 # misc
 .DS_Store
 .env.local
@@ -21,3 +34,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Local Netlify folder
+.netlify

@@ -1,0 +1,138 @@
+body {
+  overflow-x: hidden;
+}
+.MainDiv1 {
+  width: 80px;
+}
+.icon-decider {
+  position: relative;
+  top: 28px;
+  transition: transform 0.3s ease-out;
+  transform-origin: left;
+  cursor: pointer;
+}
+.left {
+  background-color: rgb(241, 206, 88);
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  left: 15px;
+}
+.right {
+  position: relative;
+  left: 90px;
+  background-color: rgb(241, 206, 88);
+  padding: 10px;
+  border-radius: 50%;
+}
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  overflow: auto;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+  margin-bottom: -10px;
+}
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+.list-group {
+  text-align: left;
+  margin-top: 30px;
+}
+.list-group a {
+  padding-left: 30px;
+}
+.list-group button {
+  padding-left: 30px;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+  visibility: hidden;
+}
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 760px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+    visibility: hidden;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+@media (max-width: 760px) {
+  #page-content-wrapper {
+    visibility: visible;
+  }
+}
+#wrapper {
+  background-color: lightblue;
+}
+
+.icon {
+  background-color: rgb(241, 206, 88);
+  padding: 9px;
+  padding-right: 5px;
+
+  padding-top: 7px;
+  height: 38px;
+  width: 38px;
+
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.dropdownmenu a {
+  padding-left: 65px;
+}
+
+.icon_dropdown {
+  position: relative;
+  left: 40px;
+}
+
+.dropdownmenu {
+  position: relative;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav span {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a.active {
+  font-weight: bolder;
+  color: white;
+}

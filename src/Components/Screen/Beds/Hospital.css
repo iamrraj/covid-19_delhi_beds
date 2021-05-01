@@ -1,0 +1,127 @@
+.data_tablee table {
+  max-width: 100%;
+  border-collapse: collapse;
+  overflow-x: scroll;
+}
+
+table {
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+.data_tablee th,
+.data_tablee td {
+  padding: 8px 16px;
+}
+.data_tablee {
+  max-width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: auto;
+  overflow-x: scroll;
+
+  background-color: white;
+}
+th {
+  border-top: white;
+  background-color: #005cbb;
+  font-size: 13px;
+  line-height: 14px;
+  /* height: 32px; */
+  /* line-height: 32px; */
+  font-family: "Rubik", Helvetica, Arial, serif;
+  color: white;
+  z-index: 1;
+}
+
+.data_tablee th {
+  position: sticky;
+  top: 0;
+  /* background: #eee; */
+  z-index: 2;
+}
+
+#btn-icon {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  line-height: 0px;
+  position: relative;
+  top: -2px;
+}
+.plus_icon {
+  position: relative;
+  left: -5px;
+  font-size: 25px;
+}
+.red {
+  background-color: rgb(221, 126, 126);
+  color: black;
+  font-weight: 700;
+}
+
+.green {
+  background-color: rgb(122, 236, 87);
+  color: black;
+  font-weight: 700;
+  margin-bottom: -230px;
+}
+
+.yellow {
+  background-color: rgb(236, 226, 87);
+  color: black;
+  font-weight: 700;
+  margin-bottom: -230px;
+}
+
+.green1:before {
+  content: " \25CF";
+  font-size: 25px;
+  color: rgb(122, 236, 87);
+  top: 3px;
+  position: relative;
+  margin-right: 5px;
+}
+.red1:before {
+  content: " \25CF";
+  font-size: 25px;
+  color: rgb(221, 126, 126);
+  top: 3px;
+  position: relative;
+  margin-right: 5px;
+}
+.yellow1:before {
+  content: " \25CF";
+  font-size: 25px;
+  color: rgb(236, 226, 87);
+  top: 3px;
+  position: relative;
+  margin-right: 5px;
+}
+.style_row {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .style_row {
+    width: auto;
+  }
+}
+.collaps_data {
+  box-shadow: 4px 4px 8px #000000, -4px -4px 9px 0px #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+#btn-call-number {
+  background-color: rgb(55, 209, 16);
+  margin-right: 10px;
+  font-weight: bold;
+  color: white;
+  height: 35px;
+  line-height: 20px;
+  border-radius: 10px;
+}
+#btn-map {
+  margin-top: -10px;
+}
