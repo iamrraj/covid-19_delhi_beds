@@ -5,6 +5,7 @@ import { getbedInfo, getHospitalDetails } from "../../../config/Service/Beds";
 import compareByAsc from "../../../config/AscDsc/Asc";
 import compareByDesc from "../../../config/AscDsc/Desc";
 import { FaArrowsAltV, FaPhoneAlt, FaMapMarkedAlt } from "react-icons/fa";
+import titleValue from "../titleValue";
 
 function HospitalLists() {
   const [bed, setBed] = useState([]);
@@ -92,14 +93,11 @@ function HospitalLists() {
               name="oer"
               style={{ background: "white" }}
             >
-              <option value="beds">COVID-19 BEDS</option>
-              <option value="covid_icu_beds">COVID-19 ICU BEDS</option>
-              <option value="oxygen_beds">COVID-19 OXYGEN BEDS</option>
-              <option value="icu_beds_without_ventilator">
-                COVID-19 ICU BEDS WITHOUT VENTILATOR
-              </option>
-              <option value="noncovid_icu_beds">NO COVID19 ICU BEDS</option>
-              <option value="ventilators">COVID-19 VENTILATOR BEDS</option>
+              {titleValue.map((c, i) => (
+                <option value={c.name} key={i + 1}>
+                  {c.title}
+                </option>
+              ))}
             </select>
           </div>
 
