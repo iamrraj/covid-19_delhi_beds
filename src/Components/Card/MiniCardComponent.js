@@ -1,6 +1,7 @@
 import React from "react";
 import { Column } from "simple-flexbox";
 import { createUseStyles, useTheme } from "react-jss";
+import CountUp from "react-countup";
 
 const useStyles = createUseStyles((theme) => ({
   container: {
@@ -49,7 +50,10 @@ function MiniCardComponent({ className = "", title, value }) {
     >
       <span className={classes.title}>{title}</span>
 
-      <span className={classes.value}>{value}</span>
+      <span className={classes.value}>
+        {" "}
+        <CountUp end={value} start={0} duration={5} />
+      </span>
     </Column>
   );
 }
