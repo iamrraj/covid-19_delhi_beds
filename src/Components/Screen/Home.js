@@ -6,7 +6,7 @@ import MiniCardComponent from "../Card/MiniCardComponent";
 import titleValue from "./titleValue";
 import moment from "moment";
 
-const useStyles = createUseStyles({
+const useStyles = createUseStyles((theme) => ({
   cardsContainer: {
     marginRight: -30,
     marginTop: -30,
@@ -18,27 +18,17 @@ const useStyles = createUseStyles({
     },
   },
   miniCardContainer: {
-    flexGrow: 1,
-    marginRight: 70,
-    backgroundColor: "#0099ff",
-    "@media (max-width: 768px)": {
-      marginTop: 30,
-      maxWidth: "none",
-    },
+    backgroundColor: theme.color.total_bed,
   },
   miniCardContainerv: {
-    flexGrow: 1,
-    marginRight: 70,
-    backgroundColor: "#00cc00",
-    "@media (max-width: 768px)": {
-      marginTop: 30,
-      maxWidth: "none",
-    },
+    backgroundColor: theme.color.total_bedV,
   },
 
   miniCardContainero: {
+    backgroundColor: theme.color.total_bed0,
+  },
+  cardTitle: {
     flexGrow: 1,
-    backgroundColor: "#ffe033",
     marginRight: 70,
     "@media (max-width: 768px)": {
       marginTop: 30,
@@ -63,7 +53,7 @@ const useStyles = createUseStyles({
       marginTop: 30,
     },
   },
-});
+}));
 
 function Home() {
   const classes = useStyles();
@@ -152,12 +142,18 @@ function Home() {
                 breakpoints={{ 384: "column" }}
               >
                 <MiniCardComponent
-                  className={classes.miniCardContainer}
+                  className={[
+                    classes.miniCardContainer,
+                    classes.cardTitle,
+                  ].join(" ")}
                   title="TOTAL BEDS"
                   value={totalBeds(c.name)}
                 />
                 <MiniCardComponent
-                  className={classes.miniCardContainerv}
+                  className={[
+                    classes.miniCardContainerv,
+                    classes.cardTitle,
+                  ].join(" ")}
                   title="VACANT BEDS"
                   value={totalVaccent(c.name)}
                 />
@@ -170,15 +166,13 @@ function Home() {
                 breakpoints={{ 384: "column" }}
               >
                 <MiniCardComponent
-                  className={classes.miniCardContainero}
+                  className={[
+                    classes.miniCardContainero,
+                    classes.cardTitle,
+                  ].join(" ")}
                   title="OCCUPIED BEDS"
                   value={totalOccupid(c.name)}
                 />
-                {/* <MiniCardComponent
-                className={classes.miniCardContainer}
-                title="Upcoming"
-                value=".."
-              /> */}
               </Row>
             </Row>
           </span>

@@ -13,6 +13,9 @@ const color = {
   veryDarkGrayishBlue: "#373a47",
   veryDarkGrayishBlueWhite: "white",
   lightBlue1: "white",
+  total_bed: "#0099ff",
+  total_bedV: "#00cc00",
+  total_bed0: "#ffe033",
 };
 
 const typography = {

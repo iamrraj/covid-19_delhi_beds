@@ -38,7 +38,7 @@ function TopHeader() {
       <div>
         <div class="topnav" id="myTopnav">
           <span className="float-left">DELHI BEDS</span>
-          <a href="/beds/" className=" bg-light">
+          <a href="/beds/" className=" bg-dark">
             {" "}
             <FaBed /> Beds
           </a>

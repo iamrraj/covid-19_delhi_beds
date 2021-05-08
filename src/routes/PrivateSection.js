@@ -1,9 +1,9 @@
 import React from "react";
 import { createUseStyles, useTheme } from "react-jss";
 import { Column, Row } from "simple-flexbox";
-import Header from "../Components/Header1/Header";
+import { Header, TopHeader } from "../Components/Header1";
 import PrivateRoute from "./PrivateRoute";
-import TopHeader from "../Components/Header1/TopHeader";
+
 const useStyles = createUseStyles({
   container: {
     height: "100%",
