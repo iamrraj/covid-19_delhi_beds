@@ -54,16 +54,16 @@ function Header() {
     <>
       <span className="icon_dark">
         {" "}
-        <FaRegMoon style={style} />
+        <FaSun style={style} />
       </span>
-      &nbsp; &nbsp; Dark
+      &nbsp; &nbsp; Day
     </>
   ) : (
     <>
       <span className="icon">
-        <FaSun style={style} />{" "}
+        <FaRegMoon style={style} />{" "}
       </span>
-      &nbsp; &nbsp; Day
+      &nbsp; &nbsp; Dark
     </>
   );
 

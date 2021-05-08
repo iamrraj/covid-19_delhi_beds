@@ -164,14 +164,21 @@ function HospitalLists() {
                 </th>
                 <th style={{ width: "15%" }}>Occupied Beds </th>
                 <th style={{ width: "18%" }}>Last Updated</th>
+                <th
+                  style={{ width: "18%" }}
+                  onClick={() => sorting("oxygen_left_days")}
+                >
+                  Oxygen left for{" "}
+                  <span>
+                    <FaArrowsAltV />
+                  </span>
+                </th>
               </tr>
             </thead>
 
             {getData("beds").map((c, i) => (
               <tbody key={i + 1}>
                 <tr
-                  data-toggle="collapse"
-                  data-target={`#demo1${i + 1}`}
                   className={
                     c.vacant >= 50
                       ? "green accordion-toggle"
@@ -180,7 +187,7 @@ function HospitalLists() {
                       : "red accordion-toggle"
                   }
                 >
-                  <td>
+                  <td data-toggle="collapse" data-target={`#demo1${i + 1}`}>
                     <button
                       className={
                         c.vacant >= 50
@@ -198,9 +205,23 @@ function HospitalLists() {
                   <td>{c.total ? c.total : ""}</td>
                   <td>{c.vacant ? c.vacant : ""}</td>
                   <td>{c.occupied ? c.occupied : ""}</td>
+
                   <td>
                     {" "}
                     {moment(c.updated_at).local().format("YYYY-MM-DD HH:mm")}
+                  </td>
+                  <td>
+                    {c.oxygen_left_days
+                      ? `${c.oxygen_left_days} ${
+                          c.oxygen_left_days > 1 ? "days" : "day"
+                        }`
+                      : ""}
+                    {"  "}
+                    {c.oxygen_left_hour
+                      ? `${c.oxygen_left_hour} ${
+                          c.oxygen_left_hour > 1 ? "hours" : "hour"
+                        }`
+                      : ""}
                   </td>
                 </tr>
                 <tr>
