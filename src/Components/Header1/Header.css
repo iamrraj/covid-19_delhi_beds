@@ -3,6 +3,7 @@ body {
 }
 .MainDiv1 {
   width: 80px;
+  background-color: black;
 }
 .icon-decider {
   position: relative;
@@ -12,7 +13,12 @@ body {
   cursor: pointer;
 }
 .left {
-  background-color: rgb(241, 206, 88);
+  background: rgb(247, 245, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(247, 245, 0, 0.9163866230085784) 25%,
+    rgba(194, 223, 40, 1) 75%
+  );
   padding: 10px;
   border-radius: 50%;
   position: relative;
@@ -21,8 +27,14 @@ body {
 .right {
   position: relative;
   left: 190px;
-  background-color: rgb(241, 206, 88);
+  background: rgb(247, 245, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(247, 245, 0, 0.9163866230085784) 25%,
+    rgba(194, 223, 40, 1) 75%
+  );
   padding: 10px;
+  overflow: hidden;
   border-radius: 50%;
 }
 #sidebar-wrapper {
@@ -33,6 +45,9 @@ body {
   -moz-transition: margin 0.25s ease-out;
   -o-transition: margin 0.25s ease-out;
   transition: margin 0.25s ease-out;
+}
+.fix {
+  overflow: hidden;
 }
 #sidebar-wrapper .sidebar-heading {
   padding: 0.875rem 1.25rem;
@@ -84,7 +99,29 @@ body {
 }
 
 .icon {
-  background-color: rgb(241, 206, 88);
+  background: rgb(247, 245, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(247, 245, 0, 0.9163866230085784) 25%,
+    rgba(194, 223, 40, 1) 75%
+  );
+  padding: 9px;
+  padding-right: 5px;
+
+  padding-top: 7px;
+  height: 38px;
+  width: 38px;
+
+  display: inline-block;
+  border-radius: 4px;
+}
+.icon_dark {
+  background: rgb(247, 245, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(247, 245, 0, 0.9163866230085784) 25%,
+    rgba(119, 122, 111, 1) 75%
+  );
   padding: 9px;
   padding-right: 5px;
 
@@ -135,4 +172,26 @@ body {
 .topnav a.active {
   font-weight: bolder;
   color: white;
+}
+
+.Dark_theme .border-right,
+.list-group a {
+  background-color: black;
+}
+
+.day_theme .border-right {
+  background-color: white;
+}
+.day_theme a,
+.sidebar-heading {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.Dark_theme a,
+.sidebar-heading {
+  background-color: black;
+  color: white;
+  font-weight: bold;
 }

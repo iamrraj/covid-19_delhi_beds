@@ -17,6 +17,9 @@ const useStyles = createUseStyles({
       marginLeft: 0,
     },
   },
+  darkMain: {
+    backgroundColor: "black",
+  },
   contentBlock: {
     marginTop: 0,
     height: "92vh",
@@ -34,6 +37,7 @@ const useStyles = createUseStyles({
 function PrivateSection() {
   const theme = useTheme();
   const classes = useStyles({ theme });
+  //const themeData = JSON.parse(window.localStorage.getItem("themeValue"));
 
   return (
     <Row className={classes.container}>

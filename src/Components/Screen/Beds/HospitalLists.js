@@ -94,6 +94,7 @@ function HospitalLists() {
             >
               <option value="beds">COVID-19 BEDS</option>
               <option value="covid_icu_beds">COVID-19 ICU BEDS</option>
+              <option value="oxygen_beds">COVID-19 OXYGEN BEDS</option>
               <option value="icu_beds_without_ventilator">
                 COVID-19 ICU BEDS WITHOUT VENTILATOR
               </option>

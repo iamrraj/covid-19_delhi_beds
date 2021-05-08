@@ -8,6 +8,10 @@ const titleValue = [
     title: "COVID-19 ICU BEDS",
   },
   {
+    name: "oxygen_beds",
+    title: "COVID19 OXYGEN  BEDS",
+  },
+  {
     name: "icu_beds_without_ventilator",
     title: "COVID-19 ICU BEDS WITHOUT VENTILATOR ",
   },
