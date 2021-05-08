@@ -156,10 +156,10 @@ function HospitalLists() {
                                         <FaArrowsAltV />
                                     </span>
                                 </th>
-                                <th style={{ width: '15%' }}>Occupied Beds </th>
-                                <th style={{ width: '18%' }}>Last Updated</th>
+                                <th style={{ width: '14%' }}>Occupied Beds </th>
+                                <th style={{ width: '17%' }}>Last Updated</th>
                                 <th
-                                    style={{ width: '18%' }}
+                                    style={{ width: '13%' }}
                                     onClick={() => sorting('oxygen_left_days')}
                                 >
                                     Oxygen left for{' '}
